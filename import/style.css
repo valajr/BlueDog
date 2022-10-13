@@ -9,20 +9,15 @@
     --secondary-dark: #b39a4f;
 }
 
-*{
+* {
     margin: 0 auto;
     padding: 0;
-}
-
-.form-test {
-    width: 100vw;
-    height: 100vh;
 }
 
 .test {
     border: none;
     padding: 10px;
-    margin: 5px;
+    margin: .5rem;
     background: var(--primary-medium);
     box-shadow: 5px 5px 5px var(--primary-dark),
                 -5px -5px 5px var(--primary-medium-light);
@@ -30,21 +25,22 @@
     display: inline-block;
     font-weight: 400;
     vertical-align: middle;
+    color: white;
 }
 
 .test:focus {
     outline: none;
 }
 
-progress { 
+progress.progress { 
     -webkit-appearance: none; 
 }
 
-::-webkit-progress-inner-element { 
+progress.progress::-webkit-progress-inner-element { 
     box-shadow: var(--secondary-dark); 
 }
 
-::-webkit-progress-bar { 
+progress.progress::-webkit-progress-bar { 
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -56,47 +52,47 @@ progress {
                 -5px -5px 5px var(--primary-light);
 }
 
-::-webkit-progress-value { 
+progress.progress::-webkit-progress-value { 
     border-radius: 5px;
     background: var(--primary-dark);
 }
 
-::-moz-progress-bar { 
+progress.progress::-moz-progress-bar { 
     border-radius: 5px; 
 }
 
-::-ms-fill { 
+progress.progress::-ms-fill { 
     border-radius: 5px; 
 }
 
-::-webkit-file-upload-button {
+input[type=file].test::-webkit-file-upload-button {
     background: var(--primary-light);
     color: var(--primary-medium-dark);
     border: none;
     border-radius: 5px;
 }
 
-::-webkit-file-upload-button:hover {
+input[type=file].test::-webkit-file-upload-button:hover {
     cursor: pointer;
 }
 
-::-webkit-file-upload-button:active {
+input[type=file].test::-webkit-file-upload-button:active {
     background: var(--primary-medium-dark);
     color: var(--primary-dark);
 }
 
-::-ms-browse {
+input[type=file].test::-ms-browse {
     background: var(--primary-light);
     color: var(--primary-medium-dark);
     border: none;
     border-radius: 5px;
 }
 
-::-ms-browse:hover {
+input[type=file].test::-ms-browse:hover {
     cursor: pointer;
 }
 
-::-ms-browse:active {
+input[type=file]::-ms-browse:active {
     background: var(--primary-medium-dark);
     color: var(--primary-dark);
 }
@@ -112,7 +108,7 @@ progress {
     -ms-user-select: none;
     user-select: none;
     padding: 5px 10px;
-    margin: 5px;
+    margin: .5rem;
     border-radius: 10px;
     transition: color .15s ease-in-out,
                 background-color .15s ease-in-out,
@@ -130,7 +126,7 @@ progress {
     background: var(--primary-medium);
     box-shadow: 5px 5px 5px var(--primary-dark),
                 -5px -5px 5px var(--primary-light);
-    color: black;
+    color: white;
 }
 
 .btn-standard:hover:not(:disabled) {
@@ -138,7 +134,7 @@ progress {
 }
 
 .btn-standard:active:not(:disabled) {
-    box-shadow: 5px 5px 5px inset var(--primary-dark),
+    box-shadow: 5px 5px 5px inset var(--primary-medium-dark),
                 -5px -5px 5px inset var(--primary-medium-light);
 }
 
@@ -176,15 +172,27 @@ progress {
     border: none;
 }
 
-.btn-small {
-    font-size: .8rem;
-    font-weight: 50;
+.btn-transparent {
+    border: none;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+}
+
+.btn-transparent:disabled {
+    color: grey;
+}
+
+.btn-selected {
+    color: var(--primary-dark);
+    box-shadow: 5px 5px 5px inset var(--primary-medium-dark),
+                -5px -5px 5px inset var(--primary-medium-light);
 }
 
 .btn-link {
     border: none;
     font-weight: 400;
-    color: #007bff;
+    color: var(--primary-dark);
     background-color: transparent;
 }
 
@@ -192,9 +200,15 @@ progress {
     text-decoration: underline;
 }
 
+.btn-small {
+    font-size: .8rem;
+    font-weight: 50;
+}
+
 .btn-group {
     display: flex;
-
+    margin: .5rem;
+    justify-content: center;
 }
 
 .btn-group > button {
@@ -217,4 +231,52 @@ progress {
 .btn-group > button:last-child {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.header {
+    margin: .5rem;
+    display: flex;
+    color: white;
+    background-color: var(--primary-dark);
+}
+
+.header-content {
+    display: grid;
+    width: 100%;
+}
+
+.navigator {
+    display: flex;
+}
+
+.header-content > input[type=search] {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer {
+    display: flex;
+    border-top: 1px solid var(--primary-dark);
+    margin: .5rem;
+    align-items: center;
+}
+
+.footer > div > button > img {
+    height: 36px;
+    width: auto;
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid var(--primary-dark);
 }

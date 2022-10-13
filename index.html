@@ -15,35 +15,101 @@
         <input type="color" class="test">
         <input type="date" class="test">
         <input type="file" class="test">
+        <input type="search" placeholder="Search..." class="test"></input>
+
         <br>
+
         <textarea name="" id="" cols="30" rows="10" class="test"></textarea>
-        <progress></progress>
-        <progress max="100" value="50"></progress>
+        <progress class="progress"></progress>
+        <progress class="progress" max="100" value="50"></progress>
         <select name="" id="" class="test">
-            <option value="name" class="test">Test 1</option>
-            <option value="name" class="test">Test 2</option>
-            <option value="name" class="test">Test 3</option>
-            <option value="name" class="test">Test 4</option>
+            <option value="name">Test 1</option>
+            <option value="name">Test 2</option>
+            <option value="name">Test 3</option>
+            <option value="name">Test 4</option>
         </select>
+
         <br>
+
         <button class="btn btn-standard">btn-standard</button>
         <button class="btn btn-standard" disabled>btn-standard</button>
         <button class="btn btn-outline">btn-outline</button>
         <button class="btn btn-outline" disabled>btn-outline</button>
+        <button class="btn btn-link">btn-link</button>
+        <button class="btn btn-link" disabled>btn-link</button>
+        <button class="btn btn-transparent">btn-transparent</button>
+        <button class="btn btn-transparent" disabled>btn-transparent</button>
         <button class="btn btn-small btn-standard">btn-standard-small</button> 
         <button class="btn btn-small btn-outline" disabled>btn-outline-small</button>
-        <button class="btn btn-link">btn-link</button>
-        <button class="btn btn-link">btn-link</button>
         <div class="btn-group">
             <button class="btn btn-standard">btn-01</button>
             <button class="btn btn-standard">btn-02</button>
             <button class="btn btn-standard">btn-03</button>
             <button class="btn btn-standard">btn-04</button>
         </div>
+
         <br>
+
         <div class="btn-group">
             <button class="btn btn-outline">btn-01</button>
             <button class="btn btn-outline">btn-02</button>
+        </div>
+
+        <header class="header test">
+            <div class="header-content">
+                <img src="import/images/bluedog.jpeg" width='40' heigth='40' alt="bluedog logo" class="logo">
+                <div class="navigator btn-group">
+                    <button class="btn btn-standard btn-selected">Home</button>
+                    <button class="btn btn-standard">Features</button>
+                    <button class="btn btn-standard">Pricing</button>
+                    <button class="btn btn-standard">FAQs</button>
+                    <button class="btn btn-standard">About</button>
+                </div>
+                <input type="search" placeholder="Search..." class="test"></input>
+                <div class="buttons btn-group">
+                    <button class="btn btn-standard">Login</button>
+                    <button class="btn btn-standard">Register</button>
+                </div>
+            </div>
+        </header>
+
+        <footer class="footer test">
+            <div class="footer-logo">
+                <img src="import/images/bluedog.jpeg" width='40' heigth='40' alt="bluedog logo" class="logo">
+                <span>© 2022 Company, Inc</span>
+            </div>
+            <div class="footer-content">
+                <button class="btn btn-transparent" onclick="location.href='#'" type="button">
+                    <img src="import/images/twitter.png" alt="twitter logo">
+                </button>
+                <button class="btn btn-transparent" onclick="location.href='#'" type="button">
+                    <img src="import/images/facebook.png" alt="facebook logo">
+                </button>
+                <button class="btn btn-transparent"  onclick="location.href='#'" type="button">
+                    <img src="import/images/instagram.png" alt="instagram logo">
+                </button>
+            </div>
+        </footer>
+
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="import/images/bluedog.jpeg" width='40' heigth='40' alt="bluedog logo" class="logo">
+                <span>Sidebar</span>
+            </div>
+            <hr class="hr">
+            <div class="sidebar-content">
+
+            </div>
+            <hr class="hr">
+            <div class="sidebar-dropdown">
+                <img src="#" alt="user">
+                <select option="" id="" class="test">
+                    <option value="option">Test 1</option>
+                    <option value="option">Test 2</option>
+                    <option value="option">Test 3</option>
+                    <option value="option">Test 4</option>
+                </select>
+            </div>
         </div>
     </form>
 </body>
