@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="import/style.css">
-
+    <script src="https://kit.fontawesome.com/87083b552b.js" crossorigin="anonymous"></script>
+    
     <title>BlueDog Framework</title>
 </head>
 <body>
@@ -96,19 +98,32 @@
                 <img src="import/images/bluedog.jpeg" width='40' heigth='40' alt="bluedog logo" class="logo">
                 <span>Sidebar</span>
             </div>
+            <ul class="sidebar-content">
+                <li class="nav-item nav-active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-gauge"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-table-cells"></i>
+                    <span>Orders</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span>Products</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>Customer</span>
+                </li>
+            </ul>
             <hr class="hr">
-            <div class="sidebar-content">
-
-            </div>
-            <hr class="hr">
-            <div class="sidebar-dropdown">
-                <img src="#" alt="user">
-                <select name="test-02" class="test">
-                    <option value="name">Test 1</option>
-                    <option value="name">Test 2</option>
-                    <option value="name">Test 3</option>
-                    <option value="name">Test 4</option>
-                </select>
+            <div class="sidebar-user">
+                <i class="fa-regular fa-user"></i>
+                <span>User name</span>
             </div>
         </div>
     </form>

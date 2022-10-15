@@ -37,7 +37,7 @@ progress.progress {
 }
 
 progress.progress::-webkit-progress-inner-element { 
-    box-shadow: var(--secondary-dark); 
+    box-shadow: var(--primary-medium-dark); 
 }
 
 progress.progress::-webkit-progress-bar { 
@@ -54,7 +54,7 @@ progress.progress::-webkit-progress-bar {
 
 progress.progress::-webkit-progress-value { 
     border-radius: 5px;
-    background: var(--primary-dark);
+    background: var(--primary-medium-dark);
 }
 
 progress.progress::-moz-progress-bar { 
@@ -231,6 +231,14 @@ input[type=file]::-ms-browse:active {
     border-bottom-right-radius: 10px;
 }
 
+.hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid var(--primary-dark);
+    width: 90%;
+}
+
 .header {
     margin: .5rem;
     display: flex;
@@ -265,16 +273,62 @@ input[type=file]::-ms-browse:active {
 }
 
 .sidebar {
-    width: 300px;
     display: flex;
+    width: 300px;
+    height: 95vh;
     flex-direction: column;
     background-color: white;
     vertical-align: middle;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px var(--primary-dark),
+                -5px -5px 5px var(--primary-medium-light);
+    border-radius: 10px;
+    margin-left: 0;
 }
 
-.hr {
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    border-top: 1px solid var(--primary-dark);
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    font-weight: 600;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.sidebar-content {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.nav-item {
+    align-items: flex-start;
+}
+
+.nav-item, .sidebar-user {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--primary-medium-light);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.nav-item:hover:not(disabled):not(.nav-active), .sidebar-user:hover:not(disabled):not(.nav-active) {
+    background-color: var(--primary-medium);
+    cursor: pointer;
+}
+
+.nav-item:active:not(disabled),  .sidebar-user:active:not(disabled) {
+    background-color: var(--primary-medium-dark);
+    box-shadow: 5px 5px 5px inset var(--primary-dark),
+                -5px -5px 5px inset var(--primary-medium-light);
+}
+
+.nav-active {
+    background-color: var(--primary-medium-dark);
 }
