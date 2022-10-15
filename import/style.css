@@ -287,17 +287,6 @@ input[type=file]::-ms-browse:active {
     margin-left: 0;
 }
 
-.sidebar-logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    height: 40px;
-    font-weight: 600;
-    font-size: 2rem;
-    vertical-align: middle;
-}
-
 .sidebar-content {
     width: 100%;
     list-style: none;
@@ -315,7 +304,7 @@ input[type=file]::-ms-browse:active {
     margin-top: 10px;
     background-color: var(--primary-medium-light);
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
 }
 
 .nav-item:hover:not(disabled):not(.nav-active), .sidebar-user:hover:not(disabled):not(.nav-active) {
