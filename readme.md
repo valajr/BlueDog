@@ -13,6 +13,10 @@ Made in 03/10/2022 ~ 16/10/2022.
 
   - [Getting Started](#getting-started)
     - [Supported Browsers](#supported-browsers)
+  - [Style](#style)
+    - [Colors](#colors)
+      - [Aplication](#aplication)
+    - [Fonts/Fonts Sizes](#fontssize-fonts)
   - [Components](#components)
     - [Inputs](#inputs)
     - [Other Elements](#other-elements)
