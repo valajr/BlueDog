@@ -248,28 +248,53 @@ input[type=file].bd-pattern::-ms-browse:active {
 }
 
 .bd-header {
-    margin: .5rem;
-    display: flex;
     color: white;
     background-color: var(--primary-medium-dark);
+    margin: .5rem;
+    width: 95%;
 }
 
 .bd-header-content {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    justify-content: center;
 }
 
 .bd-header-navigator {
-    display: flex;
+    margin: auto;
+    margin-left: 0;
+    align-items: center;
 }
 
-.bd-header-content > input[type=search] {
-    width: 80%;
-    margin-left: 10%;
+.bd-header-item {
+    flex: 0 0 auto;
+    width: auto;
+    padding: .5rem 1rem;
+    border-collapse: collapse;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.bd-header-buttons {
-    justify-content: center;
+@media (max-width: 900px) {
+
+    .bd-header-content {
+        display: grid;
+    }
+
+    .bd-header-navigator {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bd-header-content > input[type=search] {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .bd-header-buttons {
+        justify-content: center;
+    }
 }
 
 .bd-footer {
