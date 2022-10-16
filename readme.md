@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://valajr.github.io/BlueDog/import/style.css">
-
 # BlueDog Framework
 
 Sixth project of "In Web One Project Every Two Weeks".
@@ -70,26 +68,13 @@ Just add the class `"bd-pattern"` to use the pattern on these input elements:
 
 To use add the classes `"bd-btn"` and `"bd-btn-<type of button>"`, being type one of the following:
 
-- <button class="bd-btn bd-btn-standard">_Standard_</button>
-A button without border that has a medium tone background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
-
-- <button class="bd-btn bd-btn-outline">_Outline_</button>
-A button with a darker border and transparent background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
-
-- <button class="bd-btn bd-btn-link">_Link_</button>
-A button without border or background and will underline the text when you hover it;
-
-- <button class="bd-btn bd-btn-transparent">_Transparent_</button>
-A button without border or background and with a white text on it; when disabled the text will change to grey;
-
-- <button class="bd-btn bd-btn-small bd-btn-standard">_Small_</button>
-A modifier to make the font size smaller;
-
-- <div class="bd-btn-group"><button class="bd-btn bd-btn-outline">G</button><button class="bd-btn bd-btn-outline">r</button><button class="bd-btn bd-btn-outline">o</button><button class="bd-btn bd-btn-outline">u</button><button class="bd-btn bd-btn-outline">p</button></div>
-A modifier to agroup buttons;
-
-- <button class="bd-btn bd-btn-transparent bd-btn-selected">_Selected_</button>
-A modifier to make the color of text grey.
+- _Standard_: a button without border that has a medium tone background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
+- _Outline_: a button with a darker border and transparent background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
+- _Link_: a button without border or background and will underline the text when you hover it;
+- _Transparent_: a button without border or background and with a white text on it; when disabled the text will change to grey;
+- _Small_: a modifier to make the font size smaller;
+- _Group_: a modifier to agroup buttons;
+- _Selected_: a modifier to make the color of text grey.
 
 The buttons have support to be disabled, making them non-interactables and a little opaque.
 
