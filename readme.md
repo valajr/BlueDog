@@ -39,8 +39,33 @@ After that, you can use the styles provided by the Framework just like this [exa
 
 ---
 
-## Colors
+## Style
 
+The style of this framework is neumorphism, an visual style that blends from flat design and skeuomorphism, you can learn more about the style on this [link](https://hype4.academy/articles/design/neumorphism-in-user-interfaces).
+
+### Colors
+
+The color palett of this project is:
+- ![#d9e6ff](https://via.placeholder.com/15/d9e6ff/d9e6ff.png) `#d9e6ff`;
+- ![#b0e7ff](https://via.placeholder.com/15/b0e7ff/b0e7ff.png) `#b0e7ff`;
+- ![#bdc8ff](https://via.placeholder.com/15/bdc8ff/bdc8ff.png) `#bdc8ff`;
+- ![#a0bfe8](https://via.placeholder.com/15/a0bfe8/a0bfe8.png) `#a0bfe8`.
+- ![#a1aad9](https://via.placeholder.com/15/a1aad9/a1aad9.png) `#a1aad9`.
+
+#### Aplication
+
+For shadows tends to use:
+- ![#d9e6ff](https://via.placeholder.com/15/d9e6ff/d9e6ff.png) `#d9e6ff`;
+- ![#a1aad9](https://via.placeholder.com/15/a1aad9/a1aad9.png) `#a1aad9`.
+
+For elements use:
+- ![#b0e7ff](https://via.placeholder.com/15/b0e7ff/b0e7ff.png) `#b0e7ff`;
+- ![#bdc8ff](https://via.placeholder.com/15/bdc8ff/bdc8ff.png) `#bdc8ff`;
+- ![#a0bfe8](https://via.placeholder.com/15/a0bfe8/a0bfe8.png) `#a0bfe8`.
+
+
+### Fonts/Size fonts
+~to be defined~
 
 ---
 
