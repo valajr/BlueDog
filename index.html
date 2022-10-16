@@ -4,27 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <script defer src="import/main.js"></script>
+    
     <link rel="stylesheet" href="import/style.css">
-    <script src="https://kit.fontawesome.com/87083b552b.js" crossorigin="anonymous"></script>
     
     <title>BlueDog Framework</title>
 </head>
 <body>
-    <form action="#" class="form-test">
-        <input type="text" class="test">
-        <input type="password" class="test">
-        <input type="number" class="test">
-        <input type="color" class="test">
-        <input type="date" class="test">
-        <input type="file" class="test">
-        <input type="search" placeholder="Search..." class="test"></input>
+    <form action="#" class="bd-form-pattern">
+        <input type="text" class="bd-pattern">
+        <input type="password" class="bd-pattern">
+        <input type="number" class="bd-pattern">
+        <input type="color" class="bd-pattern">
+        <input type="date" class="bd-pattern">
+        <input type="file" class="bd-pattern">
+        <input type="search" placeholder="Search..." class="bd-pattern"></input>
 
         <br>
 
-        <textarea cols="30" rows="10" class="test"></textarea>
-        <progress class="progress"></progress>
-        <progress class="progress" max="100" value="50"></progress>
-        <select class="test">
+        <textarea cols="30" rows="10" class="bd-pattern"></textarea>
+        <progress class="bd-progress"></progress>
+        <progress class="bd-progress" max="100" value="50"></progress>
+        <select class="bd-pattern">
             <option value="name">Test 1</option>
             <option value="name">Test 2</option>
             <option value="name">Test 3</option>
@@ -33,95 +34,36 @@
 
         <br>
 
-        <button class="btn btn-standard">btn-standard</button>
-        <button class="btn btn-standard" disabled>btn-standard</button>
-        <button class="btn btn-outline">btn-outline</button>
-        <button class="btn btn-outline" disabled>btn-outline</button>
-        <button class="btn btn-link">btn-link</button>
-        <button class="btn btn-link" disabled>btn-link</button>
-        <button class="btn btn-transparent">btn-transparent</button>
-        <button class="btn btn-transparent" disabled>btn-transparent</button>
-        <button class="btn btn-small btn-standard">btn-standard-small</button> 
-        <button class="btn btn-small btn-outline" disabled>btn-outline-small</button>
-        <div class="btn-group">
-            <button class="btn btn-standard">btn-01</button>
-            <button class="btn btn-standard">btn-02</button>
-            <button class="btn btn-standard">btn-03</button>
-            <button class="btn btn-standard">btn-04</button>
+        <button class="bd-btn bd-btn-standard">btn-standard</button>
+        <button class="bd-btn bd-btn-standard" disabled>btn-standard</button>
+        <button class="bd-btn bd-btn-outline">btn-outline</button>
+        <button class="bd-btn bd-btn-outline" disabled>btn-outline</button>
+        <button class="bd-btn bd-btn-link">btn-link</button>
+        <button class="bd-btn bd-btn-link" disabled>btn-link</button>
+        <button class="bd-btn bd-btn-transparent">btn-transparent</button>
+        <button class="bd-btn bd-btn-transparent" disabled>btn-transparent</button>
+        <button class="bd-btn bd-btn-small bd-btn-standard">btn-standard-small</button> 
+        <button class="bd-btn bd-btn-small bd-btn-outline" disabled>btn-outline-small</button>
+        <div class="bd-btn-group">
+            <button class="bd-btn bd-btn-standard">btn-01</button>
+            <button class="bd-btn bd-btn-standard">btn-02</button>
+            <button class="bd-btn bd-btn-standard">btn-03</button>
+            <button class="bd-btn bd-btn-standard">btn-04</button>
         </div>
 
         <br>
 
-        <div class="btn-group">
-            <button class="btn btn-outline">btn-01</button>
-            <button class="btn btn-outline">btn-02</button>
-        </div>
-
-        <header class="header test">
-            <div class="header-content">
-                <img src="import/images/bluedog.jpeg" width='40' heigth='40' alt="bluedog logo" class="logo">
-                <div class="navigator">
-                    <button class="btn btn-transparent btn-selected">Home</button>
-                    <button class="btn btn-transparent">Features</button>
-                    <button class="btn btn-transparent">Pricing</button>
-                    <button class="btn btn-transparent">FAQs</button>
-                    <button class="btn btn-transparent">About</button>
-                </div>
-                <input type="search" placeholder="Search..." class="test"></input>
-                <div class="buttons btn-group">
-                    <button class="btn btn-standard">Login</button>
-                    <button class="btn btn-standard">Register</button>
-                </div>
-            </div>
-        </header>
-
-        <div class="sidebar">
-            <ul class="sidebar-content">
-                <li class="nav-item nav-active">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-gauge"></i>
-                    <span>Dashboard</span>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-table-cells"></i>
-                    <span>Orders</span>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-boxes-stacked"></i>
-                    <span>Products</span>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-regular fa-circle-user"></i>
-                    <span>Customer</span>
-                </li>
-            </ul>
-            <hr class="hr">
-            <div class="sidebar-user">
-                <i class="fa-regular fa-user"></i>
-                <span>User name</span>
-            </div>
-        </div>
+        <div class="bd-btn-group">
+            <button class="bd-btn bd-btn-outline">btn-01</button>
+            <button class="bd-btn bd-btn-outline">btn-02</button>
+        </div>        
         
-        <footer class="footer test">
-            <div class="footer-logo">
-                <img src="import/images/bluedog.jpeg" width='40' heigth='40' alt="bluedog logo" class="logo">
-                <span>© 2022 Company, Inc</span>
-            </div>
-            <div class="footer-content">
-                <button class="btn btn-transparent" onclick="location.href='#'" type="button">
-                    <img src="import/images/twitter.png" alt="twitter logo">
-                </button>
-                <button class="btn btn-transparent" onclick="location.href='#'" type="button">
-                    <img src="import/images/facebook.png" alt="facebook logo">
-                </button>
-                <button class="btn btn-transparent"  onclick="location.href='#'" type="button">
-                    <img src="import/images/instagram.png" alt="instagram logo">
-                </button>
-            </div>
-        </footer>
+        <button id="headerButton" class="bd-btn bd-btn-standard">View Header</button>
+        <button id="sidebarButton" class="bd-btn bd-btn-standard">View Sidebar</button>
+        <button id="footerButton" class="bd-btn bd-btn-standard">View Footer</button>
+        <button id="loginButton" class="bd-btn bd-btn-standard">View Login Screen</button>
+        <button id="carouselButton" class="bd-btn bd-btn-standard">View Carousel</button>
+
     </form>
 </body>
 </html>

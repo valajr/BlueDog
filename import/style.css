@@ -14,7 +14,7 @@
     padding: 0;
 }
 
-.test {
+.bd-pattern {
     border: none;
     padding: 10px;
     margin: .5rem;
@@ -28,19 +28,31 @@
     color: white;
 }
 
-.test:focus {
-    outline: none;
+.bd-pattern:focus {
+    outline: 2px solid var(--primary-medium-dark);
 }
 
-progress.progress { 
+.bd-pattern::-moz-placeholder {
+    color: white;
+}
+
+.bd-pattern::-ms-input-placeholder {
+    color: white;
+}
+
+.bd-pattern::-webkit-input-placeholder {
+    color: white;
+}
+
+progress.bd-progress { 
     -webkit-appearance: none; 
 }
 
-progress.progress::-webkit-progress-inner-element { 
+progress.bd-progress::-webkit-progress-inner-element { 
     box-shadow: var(--primary-medium-dark); 
 }
 
-progress.progress::-webkit-progress-bar { 
+progress.bd-progress::-webkit-progress-bar { 
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -52,52 +64,52 @@ progress.progress::-webkit-progress-bar {
                 -5px -5px 5px var(--primary-light);
 }
 
-progress.progress::-webkit-progress-value { 
+progress.bd-progress::-webkit-progress-value { 
     border-radius: 5px;
     background: var(--primary-medium-dark);
 }
 
-progress.progress::-moz-progress-bar { 
+progress.bd-progress::-moz-progress-bar { 
     border-radius: 5px; 
 }
 
-progress.progress::-ms-fill { 
+progress.bd-progress::-ms-fill { 
     border-radius: 5px; 
 }
 
-input[type=file].test::-webkit-file-upload-button {
+input[type=file].bd-pattern::-webkit-file-upload-button {
     background: var(--primary-light);
     color: var(--primary-medium-dark);
     border: none;
     border-radius: 5px;
 }
 
-input[type=file].test::-webkit-file-upload-button:hover {
+input[type=file].bd-pattern::-webkit-file-upload-button:hover {
     cursor: pointer;
 }
 
-input[type=file].test::-webkit-file-upload-button:active {
+input[type=file].bd-pattern::-webkit-file-upload-button:active {
     background: var(--primary-medium-dark);
     color: var(--primary-dark);
 }
 
-input[type=file].test::-ms-browse {
+input[type=file].bd-pattern::-ms-browse {
     background: var(--primary-light);
     color: var(--primary-medium-dark);
     border: none;
     border-radius: 5px;
 }
 
-input[type=file].test::-ms-browse:hover {
+input[type=file].bd-pattern::-ms-browse:hover {
     cursor: pointer;
 }
 
-input[type=file]::-ms-browse:active {
+input[type=file].bd-pattern::-ms-browse:active {
     background: var(--primary-medium-dark);
     color: var(--primary-dark);
 }
 
-.btn {
+.bd-btn {
     display: inline-block;
     font-weight: 600;
     text-align: center;
@@ -116,11 +128,11 @@ input[type=file]::-ms-browse:active {
                 box-shadow .15s ease-in-out;
 }
 
-.btn:hover:not(:disabled) {
+.bd-btn:hover:not(:disabled) {
     cursor: pointer;
 }
 
-.btn-standard {
+.bd-btn-standard {
     font-weight: 100;
     border: none;
     background: var(--primary-medium);
@@ -129,21 +141,21 @@ input[type=file]::-ms-browse:active {
     color: white;
 }
 
-.btn-standard:hover:not(:disabled) {
+.bd-btn-standard:hover:not(:disabled) {
     background: var(--primary-medium-dark);
 }
 
-.btn-standard:active:not(:disabled) {
+.bd-btn-standard:active:not(:disabled) {
     box-shadow: 5px 5px 5px inset var(--primary-medium-dark),
                 -5px -5px 5px inset var(--primary-medium-light);
 }
 
-.btn-standard:disabled {
+.bd-btn-standard:disabled {
     background: var(--primary-medium-light);
     color: var(--primary-medium);
 }
 
-.btn-outline {    
+.bd-btn-outline {    
     border: 1px solid var(--primary-medium);
     font-size: 1rem;
     line-height: 1.5;
@@ -157,81 +169,80 @@ input[type=file]::-ms-browse:active {
                 -5px -5px 5px var(--primary-light);
 }
 
-.btn-outline:hover:not(:disabled) {
+.bd-btn-outline:hover:not(:disabled) {
     background: var(--primary-medium);
     color: white;
 }
 
-.btn-outline:active:not(:disabled) {
+.bd-btn-outline:active:not(:disabled) {
     box-shadow: 5px 5px 5px inset var(--primary-dark),
                 -5px -5px 5px inset var(--primary-medium-light);
 }
 
-.btn-outline:disabled {
+.bd-btn-outline:disabled {
     background: var(--primary-medium-light);
     border: none;
 }
 
-.btn-transparent {
+.bd-btn-transparent {
     border: none;
     font-weight: 400;
     color: white;
     background-color: transparent;
 }
 
-.btn-transparent:disabled {
+.bd-btn-transparent:disabled {
     color: grey;
 }
 
-.btn-selected {
+.bd-btn-selected {
     color: grey;
 }
 
-.btn-link {
+.bd-btn-link {
     border: none;
     font-weight: 400;
     color: var(--primary-dark);
     background-color: transparent;
 }
 
-.btn-link:hover:not(:disabled) {
+.bd-btn-link:hover:not(:disabled) {
     text-decoration: underline;
 }
 
-.btn-small {
+.bd-btn-small {
     font-size: .8rem;
     font-weight: 50;
 }
 
-.btn-group {
+.bd-btn-group {
     display: flex;
     margin: .5rem;
-    justify-content: center;
 }
 
-.btn-group > button {
+.bd-btn-group > button {
     margin: 0;
     border-radius: 0;
 }
 
-.btn-group > button + button {
+.bd-btn-group > button + button {
     border-left: none;
     box-shadow: 0 5px 5px var(--primary-dark),
                 0 -5px 5px var(--primary-light);
 }
 
-.btn-group > button:first-child {
+.bd-btn-group > button:first-child {
     border-radius: 10px 0 0 10px;
     box-shadow: 0 5px 5px var(--primary-dark),
                 0 -5px 5px var(--primary-light);
 }
 
-.btn-group > button:last-child {
+.bd-btn-group > button:last-child {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.hr {
+.bd-hr {
     margin: 1rem 0;
     color: inherit;
     border: 0;
@@ -239,40 +250,44 @@ input[type=file]::-ms-browse:active {
     width: 90%;
 }
 
-.header {
+.bd-header {
     margin: .5rem;
     display: flex;
     color: white;
     background-color: var(--primary-medium-dark);
 }
 
-.header-content {
+.bd-header-content {
     display: grid;
     width: 100%;
 }
 
-.navigator {
+.bd-header-navigator {
     display: flex;
 }
 
-.header-content > input[type=search] {
+.bd-header-content > input[type=search] {
     width: 80%;
     margin-left: 10%;
 }
 
-.footer {
+.bd-header-buttons {
+    justify-content: center;
+}
+
+.bd-footer {
     display: flex;
     border-top: 1px solid var(--primary-dark);
     margin: .5rem;
     align-items: center;
 }
 
-.footer > div > button > img {
+.bd-footer > div > button > img {
     height: 36px;
     width: auto;
 }
 
-.sidebar {
+.bd-sidebar {
     display: flex;
     width: 300px;
     height: 95vh;
@@ -287,7 +302,7 @@ input[type=file]::-ms-browse:active {
     margin-left: 0;
 }
 
-.sidebar-content {
+.bd-sidebar-content {
     width: 100%;
     list-style: none;
     display: flex;
@@ -295,11 +310,11 @@ input[type=file]::-ms-browse:active {
     margin-bottom: auto;
 }
 
-.nav-item {
+.bd-sidebar-nav-item {
     align-items: flex-start;
 }
 
-.nav-item, .sidebar-user {
+.bd-sidebar-nav-item, .bd-sidebar-user {
     padding: 10px;
     margin-top: 10px;
     background-color: var(--primary-medium-light);
@@ -307,17 +322,34 @@ input[type=file]::-ms-browse:active {
     width: 90%;
 }
 
-.nav-item:hover:not(disabled):not(.nav-active), .sidebar-user:hover:not(disabled):not(.nav-active) {
+.bd-sidebar-nav-item:hover:not(disabled):not(.bd-sidebar-nav-active), .bd-sidebar-user:hover:not(disabled):not(.bd-sidebar-nav-active) {
     background-color: var(--primary-medium);
     cursor: pointer;
 }
 
-.nav-item:active:not(disabled),  .sidebar-user:active:not(disabled) {
+.bd-sidebar-nav-item:active:not(disabled),  .bd-sidebar-user:active:not(disabled) {
     background-color: var(--primary-medium-dark);
     box-shadow: 5px 5px 5px inset var(--primary-dark),
                 -5px -5px 5px inset var(--primary-medium-light);
 }
 
-.nav-active {
+.bd-sidebar-nav-active {
     background-color: var(--primary-medium-dark);
+}
+
+.bd-form-login {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 15%;
+    border: 2px solid var(--primary-medium-light);
+    box-shadow: 5px 5px 5px var(--primary-dark),
+                -5px -5px 5px var(--primary-medium-light);
+    border-radius: 10px;
+}
+
+.bd-login-content {
+    margin: 20px;
 }
