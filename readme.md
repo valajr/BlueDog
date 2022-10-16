@@ -111,7 +111,7 @@ The _small_, _group_ and _selected_ buttons will work with any other class of bu
 
 ### Header
 
-The header has the classes `"bd-header"`, `"bd-header-content"` and `"bd-header-buttons"` that are to be included on the respectively elements HTML: header, content of header and the buttons.
+The header has the classes `"bd-header"`, `"bd-header-content"`, `"bd-header-item"` and `"bd-header-buttons"` that are to be included on the respectively elements HTML: header, content of header, items of header content and the buttons.
 
 ### Sidebar
 
