@@ -260,7 +260,8 @@ input[type=file].bd-pattern::-ms-browse:active {
 
 .bd-header-logo {
     width: 40px;
-    justify-self: center;
+    height: 40px;
+    margin: 4px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -291,6 +292,9 @@ input[type=file].bd-pattern::-ms-browse:active {
 }
 
 @media (max-width: 900px) {
+    .bd-header-logo {
+        align-self: center;
+    }
     .bd-header-content {
         flex-direction: column;
         width: 100%;
@@ -317,6 +321,18 @@ input[type=file].bd-pattern::-ms-browse:active {
     border-top: 1px solid var(--primary-dark);
     margin: .5rem;
     align-items: center;
+}
+
+.bd-footer-logo {
+    margin-left: 1rem;
+}
+
+.bd-footer-logo > span {
+    text-align: center;
+}
+
+.bd-footer-content {
+    margin-right: 1rem;
 }
 
 .bd-footer > div > button > img {
