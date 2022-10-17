@@ -39,7 +39,9 @@ After that, you can use the styles provided by the Framework just like this [exa
 
 ### Supported Browsers
 
-{list of supported browsers}
+- Google Chrome;
+- Microsoft Edge;
+- Opera GX.
 
 ---
 
@@ -53,7 +55,7 @@ The color palett of this project is:
 - ![#d9e6ff](https://via.placeholder.com/15/d9e6ff/d9e6ff.png) `#d9e6ff`;
 - ![#b0e7ff](https://via.placeholder.com/15/b0e7ff/b0e7ff.png) `#b0e7ff`;
 - ![#bdc8ff](https://via.placeholder.com/15/bdc8ff/bdc8ff.png) `#bdc8ff`;
-- ![#a0bfe8](https://via.placeholder.com/15/a0bfe8/a0bfe8.png) `#a0bfe8`.
+- ![#a0bfe8](https://via.placeholder.com/15/a0bfe8/a0bfe8.png) `#a0bfe8`;
 - ![#a1aad9](https://via.placeholder.com/15/a1aad9/a1aad9.png) `#a1aad9`.
 
 #### Aplication
@@ -80,34 +82,34 @@ To use the visual of the framework on HTML elements you have to add some classes
 ### Inputs
 
 Just add the class `"bd-pattern"` to use the pattern on these input elements:
-- _Text_;
-- _Password_;
-- _Number_;
-- _Color_;
-- _Date_;
-- _File_;
-- _Search_.
+- **Text**;
+- **Password**;
+- **Number**;
+- **Color**;
+- **Date**;
+- **File**;
+- **Search**.
 
 ### Other Elements
-- _Textarea_: add the class `"bd-pattern"`;
-- _Progress_: add the class `"bd-progress"`;
-- _Select_: add the class `"bd-pattern"`.
+- **Textarea**: add the class `"bd-pattern"`;
+- **Progress**: add the class `"bd-progress"`;
+- **Select**: add the class `"bd-pattern"`.
 
 ### Buttons
 
 To use add the classes `"bd-btn"` and `"bd-btn-<type of button>"`, being type one of the following:
 
-- _Standard_: a button without border that has a medium tone background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
-- _Outline_: a button with a darker border and transparent background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
-- _Link_: a button without border or background and will underline the text when you hover it;
-- _Transparent_: a button without border or background and with a white text on it; when disabled the text will change to grey;
-- _Small_: a modifier to make the font size smaller;
-- _Group_: a modifier to agroup buttons;
-- _Selected_: a modifier to make the color of text grey.
+- **Standard**: a button without border that has a medium tone background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
+- **Outline**: a button with a darker border and transparent background, a shadow to make a effect of neumorphism, when clicked will invert the shadows to do the impression of depth and when the mouse was hover it the color will be a little darker;
+- **Link**: a button without border or background and will underline the text when you hover it;
+- **Transparent**: a button without border or background and with a white text on it; when disabled the text will change to grey;
+- **Small**: a modifier to make the font size smaller;
+- **Group**: a modifier to agroup buttons;
+- **Selected**: a modifier to make the color of text grey.
 
 The buttons have support to be disabled, making them non-interactables and a little opaque.
 
-The _small_, _group_ and _selected_ buttons will work with any other class of button combined.
+The **small**, **group** and **selected** buttons will work with any other class of button combined.
 
 ### Header
 
